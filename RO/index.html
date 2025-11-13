@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Călătorie turistică în Bălți</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../Картинки/Герб.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            padding-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="preloader">
+        <img src="../Картинки/beltz.gif">
+    </div>
+    <div id="lang">
+        <a href="../RU/index.html">RU<img src="../Картинки/RU.jpg"></a>
+    </div>
+    <div class="conteiner" id="content">
+        <h1 style="font-size: 5rem;">Bine ați venit în orașul preferat!</h1>
+        <br>
+        <div class="info" id="main_text">
+            <p>
+                Bine ați venit în Bălți — inima nordului Moldovei!
+
+                Bălți este un oraș cu o istorie bogată, cultură și viață vibrantă. Aici se împletesc tradițiile vechi
+                și
+                dezvoltarea modernă, creând o atmosferă unică, de neuitat. Orașul este cunoscut pentru parcurile sale
+                frumoase, monumentele arhitecturale și străzile primitoare, unde este plăcut să te plimbi în orice perioadă
+                a anului.
+
+                Bălți nu este doar un centru cultural, ci și unul educațional: universitățile și școlile orașului atrag
+                studenți din întreaga țară. Aici au loc festivaluri, expoziții și concerte care fac viața orașului vie
+                și
+                plină de evenimente.
+
+                Pe site-ul nostru veți găsi toate informațiile despre Bălți: fapte istorice, obiective turistice, sfaturi
+                pentru turiști și noutăți despre oraș. Descoperiți Bălți mai aproape și explorați toate fațetele sale —
+                de la colțurile liniștite ale naturii până la viața urbană agitată.
+            </p>
+        </div>
+        <br>
+        <h3>Alegeți secțiunea în care doriți să mergeți</h3>
+        <div class="cards">
+            <a href="История.html">
+                <div class="card">
+                    <h4>Istorie</h4>
+                    Aflați cum dintr-o mică așezare a crescut orașul modern. Imersați-vă în fascinantul trecut al Bălțiului.
+                </div>
+            </a>
+            <a href="Достопримечательности.html">
+                <div class="card">
+                    <h4>Obiective turistice</h4>
+                    Explorați cele mai interesante locuri: parcuri, biserici, monumente și muzee care fac Bălțiul special.
+                </div>
+            </a>
+            <a href="Полезная информация.html">
+                <div class="card">
+                    <h4>Informații utile</h4>
+                    Tot ce are nevoie un turist: transport, rute, sfaturi și contacte pentru un sejur confortabil în oraș.
+                </div>
+            </a>
+            <a href="Галерея.html">
+                <div class="card">
+                    <h4>Galerie</h4>
+                    Simțiți atmosfera Bălțiului prin fotografii: străzi, oameni și locuri emblematice ale orașului.
+                </div>
+            </a>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <div class="footer">
+        <div class="icons">
+            <a target="_blank" href="https://www.instagram.com/ip_ctfb/"><img src="../Картинки/Instagram.png"></a>
+            <a target="_blank" href="https://www.facebook.com/CTFBALTI/?locale=ru_RU"><img
+                    src="../Картинки/Facebook.png"></a>
+            <a target="_blank" href="https://ctfm.md/"> <img src="../Картинки/CTFB.png"></a>
+        </div>
+        <div class="footer-text">
+            <p>Realizat de elevul Colegiului Tehnic Feroviar Bălți<br>Saveliev Maxim<br>Cu sprijinul profesorului: Burlacu N.V.</p>
+        </div>
+    </div>
+    <script>
+    window.addEventListener("load", () => {
+        const preloader = document.getElementById("preloader");
+        const content = document.getElementById("content");
+        const footer = document.querySelector(".footer"); 
+
+        content.style.display = "none";
+        footer.style.display = "none";
+        preloader.style.transition = "opacity 1s ease";
+
+        setTimeout(() => {
+            preloader.style.opacity = "0";
+        }, 1000);
+
+        setTimeout(() => {
+            preloader.style.display = "none";
+            content.style.display = "block";
+            footer.style.display = "flex";
+        }, 1500);
+    });
+</script>
+
+</body>
+
+</html>
