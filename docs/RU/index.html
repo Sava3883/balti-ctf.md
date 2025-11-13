@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Туристическое путешествие в Бельцы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../Картинки/Герб.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Бельцы, История города Бельц, Достопримечательности города Бельцы, Отели Бельцы, Рестораны Бельцы, Железнодорожный колледж">
+    <style>
+        body {
+            padding-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="preloader">
+        <img src="../Картинки/beltz.gif">
+    </div>
+    <div id="lang">
+        <a href="../RO/index.html">RO<img src="../Картинки/RO.png"></a>
+    </div>
+    <div class="conteiner" id="content">
+        <h1 style="font-size: 5rem;">Добро пожаловать в любимый город!</h1>
+        <br>
+        <div class="info" id="main_text">
+            <p>
+                Добро пожаловать в Бельцы — сердце северной Молдовы!
+
+                Бельцы — это город с богатой историей, культурой и яркой жизнью. Здесь переплетаются старинные традиции
+                и
+                современное развитие, создавая уникальную атмосферу, которую невозможно забыть. Город известен своими
+                красивыми парками, архитектурными памятниками и уютными улицами, где приятно прогуливаться в любое время
+                года.
+
+                Бельцы — это не только культурный центр, но и образовательный: университеты и школы города привлекают
+                студентов со всей страны. Здесь проходят фестивали, выставки и концерты, которые делают жизнь города
+                живой и
+                насыщенной.
+
+                На нашем сайте вы найдете всю информацию о Бельцах: исторические факты, достопримечательности, советы
+                для
+                туристов и новости города. Познакомьтесь с Бельцами ближе и откройте для себя все его грани — от
+                спокойных
+                уголков природы до бурлящей городской жизни.
+            </p>
+        </div>
+        <br>
+        <h3>Выберете раздел на который Вы хотите перейти</h3>
+        <div class="cards">
+            <a href="История.html">
+                <div class="card">
+                    <h4>История</h4>
+                    Узнайте, как из небольшого поселения вырос современный город. Погрузитесь в увлекательное прошлое
+                    Бельц.
+                </div>
+            </a>
+            <a href="Достопримечательности.html">
+                <div class="card">
+                    <h4>Достопримечательности</h4>
+                    Исследуйте самые интересные места: парки, храмы, памятники и музеи, которые делают Бельцы
+                    особенными.
+                </div>
+            </a>
+            <a href="Полезная информация.html">
+                <div class="card">
+                    <h4>Полезная информация</h4>
+                    Всё, что нужно туристу: транспорт, маршруты, советы и контакты для комфортного пребывания
+                    в городе.
+                </div>
+            </a>
+            <a href="Галерея.html">
+                <div class="card">
+                    <h4>Галерея</h4>
+                    Почувствуйте атмосферу Бельц через фотографии: улицы, люди и знаковые места города.
+                </div>
+            </a>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="footer">
+        <div class="icons">
+            <a target="_blank" href="https://www.instagram.com/ip_ctfb/"><img src="../Картинки/Instagram.png"></a>
+            <a target="_blank" href="https://www.facebook.com/CTFBALTI/?locale=ru_RU"><img
+                    src="../Картинки/Facebook.png"></a>
+            <a target="_blank" href="https://ctfm.md/"> <img src="../Картинки/CTFB.png"></a>
+        </div>
+        <div class="footer-text">
+            <p>Сделал ученик Железнодорожного технического колледжа Бельцы<br>Савельев Максим<br>При поддержке
+                преподавателя: Бурлаку Н.В.</p>
+        </div>
+    </div>
+    <script>
+        window.addEventListener("load", () => {
+            const preloader = document.getElementById("preloader");
+            const content = document.getElementById("content");
+            const footer = document.querySelector(".footer");
+            const lang = document.querySelector("#lang");
+
+            content.style.display = "none";
+            footer.style.display = "none";
+            lang.style.display = "none";
+            preloader.style.transition = "opacity 1s ease";
+
+            setTimeout(() => {
+                preloader.style.opacity = "0";
+            }, 1000);
+
+            setTimeout(() => {
+                preloader.style.display = "none";
+                content.style.display = "block";
+                footer.style.display = "flex";
+                lang.style.display = "block";
+            }, 1500);
+        });
+    </script>
+
+
+</body>
+
+</html>

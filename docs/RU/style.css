@@ -1,0 +1,362 @@
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 6.25rem;
+    color: white;
+}
+
+h1 {
+    font-size: 5.5rem;
+}
+
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../Картинки/главная — копия.jpeg") center/cover no-repeat;
+    filter: blur(5px);
+    z-index: -1;
+    border: black;
+}
+
+#lang {
+    position: absolute;
+    right: 5px;
+    border-radius: 10px;
+    background: white;
+    padding-top: 2px;
+    color: black;
+    opacity: 0.7;
+    width: 5.5rem;
+    height: 1.5625rem;
+    transition: transform 0.3s;
+}
+
+#lang a img {
+    height: auto;
+    width: 30px;
+}
+
+#lang:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+p {
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    text-align: justify;
+    font-size: 1.23em;
+    line-height: 1.3;
+}
+
+.footer {
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 2px 8px rgba(255, 255, 255);
+    position: absolute;
+    left: 0.3125rem;
+    bottom: 5;
+    width: 95.5%;
+    font-size: 0.84em;
+    transition: transform 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    gap: 0.625rem;
+}
+
+
+.footer p {
+    text-align: right;
+    padding-right: 5px;
+}
+
+.footer a img {
+    width: 3.125rem;
+    height: 3.125rem;
+    padding: 0.3125rem;
+    transition: transform 0.3s;
+}
+
+.footer a img:hover {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    transform: scale(1.1);
+}
+
+#main_text {
+    font-size: 1.0625rem;
+    width: 90%;
+    max-width: 81.25rem;
+    margin: auto;
+}
+
+.cards {
+    margin: auto;
+    width: 62.5rem;
+    display: flex;
+    gap: 0.625rem;
+
+}
+
+.card {
+    width: 15.625rem;
+    background-color: white;
+    height: 9.375rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 4px 8px rgba(255, 255, 255);
+    color: black;
+    opacity: 0.7;
+    text-align: center;
+    padding: 0.125rem;
+    transition: transform 0.3s;
+}
+
+a .card {
+    text-decoration: none;
+    color: black;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.return {
+    border-radius: 10px;
+    background: white;
+    color: black;
+    opacity: 0.7;
+    width: 12.5rem;
+    height: 1.5625rem;
+    transition: transform 0.3s;
+}
+
+.return:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+#return {
+    position: absolute;
+    left: 0;
+    border-radius: 10px;
+    background: white;
+    color: black;
+    opacity: 0.7;
+    width: 12.5rem;
+    height: 1.5625rem;
+    transition: transform 0.3s;
+}
+
+#return:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+
+.history-block {
+    display: flex;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.history-img {
+    width: 50%;
+    height: 100%;
+}
+
+.history-img img {
+    object-fit: cover;
+    width: 100%;
+    padding: 0;
+    opacity: 0.8;
+}
+
+.history-text {
+
+    background-color: white;
+    width: 50%;
+    color: black;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+    border-bottom: 1px dashed;
+}
+
+.history-block:hover {
+    opacity: 1;
+}
+
+
+.slides img {
+    object-fit: cover;
+    width: 31.25rem;
+    height: 31.25rem;
+}
+
+
+.help_info {
+    display: flex;
+}
+
+
+
+.info {
+    margin: auto;
+    position: relative;
+    width: 31.25rem;
+    background-color: white;
+    opacity: 0.9;
+    color: black;
+    border-radius: 10px;
+    text-align: left;
+    padding: 1.5625rem;
+    box-shadow: 1px 1px 15px rgb(255, 255, 255);
+    transition: transform 0.3s;
+}
+
+.info:hover {
+    transform: scale(1.05);
+}
+
+li {
+    position: relative;
+    list-style-image: URL("Картинки/Герб.png");
+}
+
+.tooltip {
+    position: absolute;
+    top: -500%;
+    left: 60%;
+    transform: translateX(-50%);
+    width: 15.625rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    text-align: center;
+}
+
+
+.hotspot .tooltip {
+    top: -300%;
+}
+
+li:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+.hotspot:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.tooltip img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h2 {
+    border-bottom: 2px solid;
+}
+
+ul a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+
+
+.map {
+    position: relative;
+    display: inline-block;
+}
+
+.hotspot {
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+}
+
+.hotspot img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+
+.hotspot p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 5px 5px;
+    border-radius: 6px;
+    width: 15rem;
+    text-align: center;
+}
+
+.hotspot img.hover {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.hotspot:hover img.hover {
+    opacity: 1;
+}
+
+.hotspot:hover img.default {
+    opacity: 0;
+}
+
+.direction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 1.25rem;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(245, 245, 245, 0.527);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#preloader img {
+    width: 25rem;
+    height: auto;
+}
